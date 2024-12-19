@@ -1,0 +1,75 @@
+@mixin add-button($color) {
+  color: $color;
+  border: 1px solid $color;
+  background-color: white;
+  &:hover {
+    background-color: $color;
+    color: #ffffff;
+  }
+}
+
+@mixin auth-heading($color , $fontSize) {
+  font-family: Oxygen;
+  font-size: $fontSize;
+  color: $color;
+}
+
+@mixin auth-text($color, $fontSize) {
+  font-family: Oxygen;
+  font-size: $fontSize;
+  color: $color;
+  font-weight: 300;
+}
+
+@mixin field-placeholder($color) {
+  font-weight: 300;
+  font-family: Oxygen;
+  color: $color;
+  font-size: 16px;
+}
+
+@mixin card-heading($color, $fontSize) {
+  font-family: Oxygen;
+  font-weight: 700;
+  font-size: $fontSize;
+  color: $color;
+}
+
+@mixin section-heading($color, $fontSize) {
+  font-family: Oxygen;
+  color: $color !important;
+  font-size: $fontSize !important;
+}
+
+@mixin section-text($color, $fontSize) {
+  font-family: Oxygen;
+  color: $color !important;
+  font-size: $fontSize !important;
+}
+
+@mixin border-color($color) {
+  border: 1px solid $color;
+}
+
+@mixin background-color($color) {
+  background-color: $color;
+}
+
+@mixin icon-sizing($size) {
+  width: $size;
+  height: $size;
+}
+
+@mixin text-color($color) {
+  color: $color;
+}
+
+@mixin grid-with-cols-rows($no-of-columns, $no-of-rows:none) {
+  display: grid;
+  grid-template-columns: $no-of-columns;
+  grid-template-rows: $no-of-rows;
+}
+
+@mixin aspect-ratio($vertical, $horizontal) {
+  aspect-ratio: $horizontal/$vertical;
+}

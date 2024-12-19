@@ -1,0 +1,12 @@
+[build]
+  # The directory where Netlify looks for the build output
+  publish = "dist"
+
+  # Build command to run before publishing
+  command = "npm run build"
+
+[[redirects]]
+  # Redirect all routes to index.html for single-page applications
+  from = "/*"
+  to = "/index.html"
+  status = 200

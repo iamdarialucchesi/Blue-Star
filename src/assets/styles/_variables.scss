@@ -1,0 +1,25 @@
+$primary: #a4e759;
+$secondary: #32dacb;
+$danger: #ff3030;
+$warning: #ff8947;
+$success: #1e9e8f;
+$info: #5b74f5;
+$dark: #111111;
+$light: #4A4A4A;
+
+// scss-docs-start spacer-variables-maps
+$spacer: 1rem !default;
+$spacers: (
+        0: 0,
+        1: $spacer * .25,
+        2: $spacer * .5,
+        3: $spacer,
+        4: $spacer * 1.5,
+        5: $spacer * 3,
+        6: $spacer * 4,
+        7: $spacer * 5,
+        8: $spacer * 6,
+        9: $spacer * 7,
+        10: $spacer * 8,
+) !default;
+// scss-docs-end spacer-variables-maps
